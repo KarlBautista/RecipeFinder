@@ -1,0 +1,32 @@
+.first-letter-recipe-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+}
+
+
+.first-letter-recipe-grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+
+.first-letter-recipe-title{
+    width: 80%;
+    margin-top: 40px;
+    
+}
+
+.first-letter-recipe-title p{
+   font-size: 2rem;
+   font-weight: 500;
+    color: #FFBF00;
+}
