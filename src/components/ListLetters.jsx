@@ -1,7 +1,8 @@
 
-import "../css/ListOfLetters.css"
+import "../css/ListLetters.css"
 import { useNavigate } from "react-router-dom"
-function ListOfLetters(){
+
+function ListLetters(){
     const navigate = useNavigate();
     const firstLetterRecipes = (letter) => {
         try{
@@ -43,4 +44,4 @@ function ListOfLetters(){
     )
 }
 
-export default ListOfLetters;
+export default ListLetters;
