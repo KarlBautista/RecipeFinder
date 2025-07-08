@@ -1,0 +1,56 @@
+.brand-title-container{
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #FFBF00; ;
+    flex-direction: column;
+    padding: 5px;
+
+ 
+}
+.brand-title-up{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-title{
+    width: 60%;
+    font-size: 6rem;
+   color: #FFBF00;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.brand-title-img1{
+    width:20%;
+    height: 50%;
+
+}
+
+.brand-title-img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.brand-title-down{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    flex-direction: column;
+    gap: 10px;
+}
+
+.brand-title-down p{
+     font-size: 1.5rem;
+    color:  #FFBF00;
+}

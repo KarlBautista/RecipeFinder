@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Fredoka:wght@300..700&family=Mystery+Quest&family=Quicksand:wght@300..700&display=swap');
+
+.recipe-container{
+    font-family: "Fredoka", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px 100px 10px 100px;
+    flex-direction: column;
+
+}
+
+.recipe-img-container{
+    width: 40%;
+    height: 100%;
+    
+}
+
+.recipe-title{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #FFBF00;
+    font-weight: 600;
+}
+
+.recipe-img-container img{
+    width: 100%;
+    height: 80%;
+}
+
+.recipe-ingredients-instructions-container{
+    width: 60%;
+    height: 100%;
+   
+
+}
+
+.ingredients-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.instruction-title{
+    text-align: center;
+    font-size: 3rem !important;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #FFBF00;
+}
+
+.recipe-ingredients-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    overflow-y: auto;
+  
+   
+}
+
+.ingredient-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ingredient-item:hover {
+    transform: translateY(5px);
+   
+}
+
+.ingredient-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+   
+}
+
+.ingredient-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.recipe-img-container{
+    display: flex;
+    
+}
+
+.img-ingredients-container{
+    width: 100%;
+    display: flex;
+    color: #FFBF00;
+   
+}
+.ingredient-measure {
+    font-weight: bold;
+     color: #FFBF00;
+    font-size: 0.9rem;
+}
+
+.ingredient-name {
+     color: #FFBF00;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.recipe-instructions-container{
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px 20px 100px;
+    color: #FFBF00;
+    font-weight: 500;
+}
+.recipe-instructions-container li{
+    font-size: 1.5rem;
+}
+
+.recipe-instructions-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    
+}
+
+.recipe-instructions-container p:not(.instruction-title) {
+    line-height: 1.6;
+    font-size: 1.5rem;
+} 
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .recipe-img-container,
+    .recipe-ingredients-instructions-container {
+        width: 100%;
+    }
+    
+    .recipe-ingredients-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .ingredient-item {
+        padding: 10px;
+    }
+    
+    .ingredient-image {
+        width: 50px;
+        height: 50px;
+    }
+}
