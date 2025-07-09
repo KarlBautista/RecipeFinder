@@ -6,6 +6,7 @@ import "../css/FirstLetterRecipes.css"
 import InputForm from "./InputForm";
 import Loading from "./Loading";
 import NoRecipeFound from "./NoRecipeFound";
+import ScrollToTop from "./ScrollToTop";
 
 
 function FirstLetterRecipes(){
@@ -38,6 +39,7 @@ function FirstLetterRecipes(){
 
     return(
         <div className="first-letter-recipe-container">
+            <ScrollToTop />
               <div className="first-letter-recipe-title">
                     <p>Recipes that starts with "{query.toUpperCase()}"</p>
               </div>
