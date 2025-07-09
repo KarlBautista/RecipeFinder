@@ -41,6 +41,11 @@ function searchResult(){
     return(
         <div className="search-result-main-container">
             <InputForm />
+            <div className="search-result-title">
+                 <p >{`Recipe results for "${query}"`}</p>
+            </div>
+           
+        
             <div className="recipes-container">
                 {recipes?.meals?.map((recipe) => {
                     return <RecipeCard recipe={recipe} key={recipe.idMeal}/>
