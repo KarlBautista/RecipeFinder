@@ -10,8 +10,7 @@ import RegisterForm from "../components/RegisterForm";
 function Home(){
     return(
         <div className="home-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5761150413355302"
-     crossorigin="anonymous"></script>
+          
              <Brand />
                 <InputForm />
               <RandomRecipes />
