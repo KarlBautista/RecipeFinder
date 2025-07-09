@@ -6,6 +6,8 @@ import RecipeCard from "./RecipeCard";
 import "../css/SearchResult.css"
 import Loading from "./Loading";
 import NoRecipeFound from "./NoRecipeFound";
+import Flags from "./Flags";
+import ListLetters from "./ListLetters";
 function searchResult(){
     const [recipes, setRecipes] = useState([]);
     const [searchParams] = useSearchParams();
@@ -38,12 +40,15 @@ function searchResult(){
 
     return(
         <div className="search-result-main-container">
+            <InputForm />
             <div className="recipes-container">
                 {recipes?.meals?.map((recipe) => {
                     return <RecipeCard recipe={recipe} key={recipe.idMeal}/>
                 })}
             </div>
-
+        <ListLetters />
+        <Flags />
+        
 
         </div>
     )
