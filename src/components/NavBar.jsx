@@ -12,6 +12,7 @@ function NavBar(){
     useEffect(() => {
         if(user !== null){
             setIsUserLoggedIn(true);
+            setShowUserMenu(false);
         } else {
             setIsUserLoggedIn(false);
         }
@@ -23,6 +24,7 @@ function NavBar(){
 
     const logoutAccount = () => {
         logout();
+        setShowUserMenu(false);
         navigate("/login")
     }
     return(
