@@ -7,7 +7,8 @@ import InputForm from "./InputForm";
 import Loading from "./Loading";
 import NoRecipeFound from "./NoRecipeFound";
 import ScrollToTop from "./ScrollToTop";
-
+import ListLetters from "./ListLetters";
+import Flags from "./Flags";
 
 function FirstLetterRecipes(){
     const [recipes, setRecipe] = useState([]);
@@ -40,6 +41,7 @@ function FirstLetterRecipes(){
     return(
         <div className="first-letter-recipe-container">
             <ScrollToTop />
+            <InputForm />
               <div className="first-letter-recipe-title">
                     <p>Recipes that starts with "{query.toUpperCase()}"</p>
               </div>
@@ -50,6 +52,8 @@ function FirstLetterRecipes(){
                 })}
 
             </div>
+            <ListLetters />
+            <Flags />
         </div>
     )
 }

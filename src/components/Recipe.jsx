@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { searchForRecipes } from "../services/api";
 import Loading from "./Loading"
+import InputForm from "./InputForm";
+import ListLetters from "./ListLetters";
+import Flags from "./Flags";
 
 import "../css/Recipe.css"
 
@@ -62,6 +65,7 @@ function Recipe(){
  
     return(
         <div className="recipe-container">
+            <InputForm />
             <div className="recipe-title-container">
                 <p className="recipe-title">{recipe?.meals?.[0].strMeal}</p>
              
@@ -105,11 +109,13 @@ function Recipe(){
                         return <li>{sentence}</li>
                     })}
                 </ol>
+         
                     
              </div>
-          
+       
+                     <ListLetters />
+                    <Flags />
 
-            
         </div>
     )
 }

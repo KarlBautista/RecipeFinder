@@ -3,40 +3,41 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 100px;
 }
 
 .form-group{
     display: flex;
+    align-items: center;
     gap: 20px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .input-dish{
-    width: 300px;
+    flex: 1;
+    min-width: 500px;
+    max-width: 600px;
     font-size: 1.3rem;
-    padding: 10px 25px 10px 25px;
+    padding: 15px 25px;
     border-radius: 10px;
-    border: 2px solid orange;
-    color: orange;
+    border: 2px solid #FFBF00;
+    color: #FFBF00;
+    background: white;
+    transition: all 0.3s ease;
 }
+
 input{
     outline: none;
 }
-input:focus{
-    border: 2px solid orange;
-}
 
-.search-dish-btn{
-    font-size: 1.2rem;
-    padding: 10px 25px 10px 25px;
-    border-radius: 10px;
-    background-color: orange;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+
+
+
 .search-dish-btn:hover{
-    background-color: hsl(39, 100%, 60%);
+    background-color: hsl(45, 100%, 60%);
+    box-shadow: 0 4px 12px rgba(255, 191, 0, 0.3);
 }
 .search-dish-btn:active{
     background-color: hsl(39, 100%, 50%);

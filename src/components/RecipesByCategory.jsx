@@ -4,6 +4,9 @@ import { useSearchParams } from "react-router-dom";
 import { filterByCategory } from "../services/api";
 import RecipeCard from "./RecipeCard";
 import Loading from "./Loading";
+import InputForm from "./InputForm";
+import Flags from "./Flags";
+import ListLetters from "./ListLetters";
 import "../css/RecipeByCategory.css"
 function RecipeByCategory(){
     const [searchParams] = useSearchParams();
@@ -36,6 +39,7 @@ function RecipeByCategory(){
 
     return(
         <div className="recipe-by-category-container">
+            <InputForm />
             <div className="recipe-by-category-title">
                 <p>{`${query.charAt(0).toUpperCase() + query.slice(1).toLowerCase()} Recipes`}</p>
             </div>
@@ -44,6 +48,8 @@ function RecipeByCategory(){
                     return <RecipeCard recipe={recipe} key={recipe.idMeal}/>
                 })}
             </div>
+            <ListLetters />
+            <Flags />
         </div>
     )
 }
