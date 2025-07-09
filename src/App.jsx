@@ -25,8 +25,7 @@ function App() {
 
   return (
     <div className='app-container'>
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5761150413355302"
-     crossorigin="anonymous"></script>
+   
     <NavBar />
       <ScrollToTop />
         <Routes>
