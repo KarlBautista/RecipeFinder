@@ -1,0 +1,24 @@
+.flags-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flags-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+     cursor: pointer;
+}
+
+.flags-grid img{
+    transition: ease 0.3;
+}
+.flags-grid img:hover {
+    transform: scale(1.1);
+    transition: ease 0.3s;
+}
