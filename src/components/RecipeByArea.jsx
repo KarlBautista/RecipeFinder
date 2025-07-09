@@ -4,6 +4,9 @@ import "../css/RecipeByArea.css"
 import { filterByArea } from "../services/api";
 import RecipeCard from "./RecipeCard";
 import Loading from "./Loading";
+import InputForm from "./InputForm";
+import ListLetters from "./ListLetters";
+import Flags from "./Flags";
 function RecipeByArea(){
 
     const [recipes, setRecipes] = useState([]);
@@ -76,6 +79,7 @@ function RecipeByArea(){
  
     return(
         <div className="filter-by-area-container">
+            <InputForm />
             <div className="filter-by-area-title">
                 <p>{query} Recipes</p>
                 <img src={`https://flagcdn.com/w80/${
@@ -87,6 +91,8 @@ function RecipeByArea(){
                     return <RecipeCard recipe={recipe} key={recipe.idMeAL}/>
                 })}
             </div>
+            <ListLetters />
+            <Flags />
           
         </div>
     )

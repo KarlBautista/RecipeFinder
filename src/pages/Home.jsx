@@ -5,7 +5,8 @@ import InputForm from "../components/InputForm";
 import RandomRecipes from "../components/RandomRecipes";
 import AllCategories from "../components/AllCategories";
 import Brand from "../components/Brand"
-import RegisterForm from "../components/RegisterForm";
+import ListLetters from "../components/ListLetters";
+import Flags from "../components/Flags";
 
 function Home(){
     return(
@@ -15,6 +16,8 @@ function Home(){
                 <InputForm />
               <RandomRecipes />
               <AllCategories />
+              <ListLetters />
+              <Flags />
               
            
         </div>
