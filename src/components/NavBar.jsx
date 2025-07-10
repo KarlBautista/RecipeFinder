@@ -19,8 +19,7 @@ function NavBar(){
                 className={location.pathname === "/" ? "active-link" : "" }>Home</Link>
                <Link to="favorites"
                className={location.pathname === "/favorites" ? "active-link" : ""}>Favorites</Link>
-            </div> 
-
+            </div>
 
             </div>
     )
