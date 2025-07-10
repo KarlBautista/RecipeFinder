@@ -15,16 +15,15 @@ import InputForm from './components/InputForm'
 import RecipeByCategory from './components/RecipesByCategory'
 import Flags from './components/Flags'
 import RecipeByArea from "./components/RecipeByArea"
-import LoginUserForm from './components/LoginUserForm'
-import RegisterForm from './components/RegisterForm'
-import Profile from './components/Profile'
 import Favorites from './components/Favorites'
+
 
 function App() {
  
 
   return (
     <div className='app-container'>
+  
    
     <NavBar />
       <ScrollToTop />
@@ -35,9 +34,7 @@ function App() {
           <Route path="/searchFirstLetter" element={<FirstLetterRecipes />}></Route>
           <Route path='/category' element={<RecipeByCategory />}></Route>
           <Route path='/area' element={<RecipeByArea />}></Route>
-          <Route path='/login' element={<LoginUserForm />}></Route>
-          <Route path='/register' element={<RegisterForm />}></Route>
-          <Route path='/profile' element={<Profile />}></Route>
+
           <Route path='/favorites' element={<Favorites />}></Route>
        </Routes> 
      

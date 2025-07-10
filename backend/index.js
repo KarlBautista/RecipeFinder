@@ -4,7 +4,6 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 
-//database to backend connection
 const client = new Client({
     host: "localhost",
     user: "postgres",

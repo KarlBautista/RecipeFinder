@@ -1,17 +1,11 @@
 
 import { useEffect } from "react";
-import { useAuthContext } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
-import LoginFirst from "./LoginFirst";
 
-function Favorites(){
-    const navigate = useNavigate();
-    const { user } = useAuthContext();
-    
+import { useNavigate } from "react-router-dom";
+
+
+function Favorites(){ 
  
-    if(user === null){
-        return <LoginFirst />
-    }
 
     return(
         <div>
