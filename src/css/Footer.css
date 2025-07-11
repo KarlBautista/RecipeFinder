@@ -9,6 +9,10 @@
     color: white;
     text-align: center;
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
   
 }
@@ -19,4 +23,20 @@
     margin: 0;
     letter-spacing: 1px;
 
+}
+
+.social-links{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links img{
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+    cursor: pointer;
 }
