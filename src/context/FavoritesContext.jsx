@@ -31,6 +31,7 @@ export const FavoritesProvier = ({ children }) => {
 
     const addToFavoritesRecipe = (recipe) => {
         setFavoritesRecipe(f => [...f, recipe]);
+        alert(`${recipe.strMeal} is added to your favorites.`)
     }
 
     const isFavoriteRecipe = (favoriteId) => {

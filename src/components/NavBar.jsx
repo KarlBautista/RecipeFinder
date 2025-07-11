@@ -1,6 +1,5 @@
 import "../css/NavBar.css"
 import { Link, useLocation} from "react-router-dom";
-import { useEffect, useState } from "react";
 
 
 
@@ -17,7 +16,7 @@ function NavBar(){
             <div className="links">
                 <Link to="/" 
                 className={location.pathname === "/" ? "active-link" : "" }>Home</Link>
-               <Link to="favorites"
+               <Link to="/favorites"
                className={location.pathname === "/favorites" ? "active-link" : ""}>Favorites</Link>
             </div>
 

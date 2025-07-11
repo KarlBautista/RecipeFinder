@@ -10,8 +10,6 @@ function RecipeCard({ recipe }){
     const { addToFavoritesRecipe, favoritesRecipe, isFavoriteRecipe, removeFromFavoritesRecipe } = useFavoritesContext();
     const favorite = isFavoriteRecipe(recipe.idMeal);
 
-  
-    
     const viewRecipe =  (recipe) => {
         navigate(`/recipe?q=${recipe.strMeal}`); 
     }
@@ -22,17 +20,13 @@ function RecipeCard({ recipe }){
                 removeFromFavoritesRecipe(recipe.idMeal);
             } else{
             addToFavoritesRecipe(recipe);
-             alert(`${recipe.strMeal} is added to favorties`);
-             console.log(favoritesRecipe);
+
             }
             
         } catch(err){
             console.error(err)
         }
     }
-
-  
-    
 
     return(
         <div className="recipe-card-container">

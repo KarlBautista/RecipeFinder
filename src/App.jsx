@@ -4,18 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from "./pages/Home"
+import Favorites from './pages/Favorites'
 import { Router, Routes, Route } from "react-router-dom"
 import SearchResult from './components/SearchResults'
 import Recipe from './components/Recipe'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
-import ListOfLetters from './components/ListLetters'
 import FirstLetterRecipes from './components/FirstLetterRecipes'
-import InputForm from './components/InputForm'
 import RecipeByCategory from './components/RecipesByCategory'
-import Flags from './components/Flags'
 import RecipeByArea from "./components/RecipeByArea"
-import Favorites from './components/Favorites'
 import { FavoritesProvier } from './context/FavoritesContext'
 
 function App() {
@@ -34,6 +31,7 @@ function App() {
           <Route path='/category' element={<RecipeByCategory />}></Route>
           <Route path='/area' element={<RecipeByArea />}></Route>
           <Route path='/favorites' element={<Favorites />}></Route>
+           
        </Routes> 
     <Footer />
     </FavoritesProvier>
