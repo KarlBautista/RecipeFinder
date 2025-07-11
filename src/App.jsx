@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar'
 import Home from "./pages/Home"
-import Favorites from './pages/Favorites'
+import FavoritesPage from './pages/Favorites'
 import { Router, Routes, Route } from "react-router-dom"
 import SearchResult from './components/SearchResults'
 import Recipe from './components/Recipe'
@@ -30,7 +30,7 @@ function App() {
           <Route path="/searchFirstLetter" element={<FirstLetterRecipes />}></Route>
           <Route path='/category' element={<RecipeByCategory />}></Route>
           <Route path='/area' element={<RecipeByArea />}></Route>
-          <Route path='/favorites' element={<Favorites />}></Route>
+          <Route path='/favorites' element={<FavoritesPage />}></Route>
            
        </Routes> 
     <Footer />
