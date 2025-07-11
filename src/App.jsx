@@ -16,15 +16,14 @@ import RecipeByCategory from './components/RecipesByCategory'
 import Flags from './components/Flags'
 import RecipeByArea from "./components/RecipeByArea"
 import Favorites from './components/Favorites'
-
+import { FavoritesProvier } from './context/FavoritesContext'
 
 function App() {
  
 
   return (
     <div className='app-container'>
-  
-   
+   <FavoritesProvier>
     <NavBar />
       <ScrollToTop />
         <Routes>
@@ -34,11 +33,10 @@ function App() {
           <Route path="/searchFirstLetter" element={<FirstLetterRecipes />}></Route>
           <Route path='/category' element={<RecipeByCategory />}></Route>
           <Route path='/area' element={<RecipeByArea />}></Route>
-
           <Route path='/favorites' element={<Favorites />}></Route>
        </Routes> 
-     
     <Footer />
+    </FavoritesProvier>
     </div>
    
    
