@@ -7,7 +7,7 @@
     align-items: center;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
-    
+    margin-top: 50px;
   
 }
 
@@ -19,3 +19,13 @@
     margin-top: 50px;
     
 }
+
+
+.favorites-recipe-container h1{
+    color:  #FFBF00;
+}
+
+.favorites-recipe-container h2{
+    color:  #FFBF00;
+}
+

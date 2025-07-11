@@ -5,6 +5,7 @@ import Loading from "./Loading"
 import InputForm from "./InputForm";
 import ListLetters from "./ListLetters";
 import Flags from "./Flags";
+import { useFavoritesContext } from "../context/FavoritesContext";
 
 import "../css/Recipe.css"
 
@@ -14,6 +15,8 @@ function Recipe(){
     const [searchParams] = useSearchParams();
     const [loading, setLoading] = useState(true);
     const query = searchParams.get("q");
+    const { isFavoriteRecipe, addToFavoritesRecipe, removeFromFavoritesRecipe } = useFavoritesContext();
+    const favorite = isFavoriteRecipe(recipe?.meals?.[0].idMeal);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -71,11 +74,15 @@ function Recipe(){
              
             </div>
           
-
+             
             <div className="img-ingredients-container">
+                
+               
                     <div className="recipe-img-container">
-              {recipe?.meals?.length > 0 && <img src={recipe.meals[0].strMealThumb} alt={`image for recipe ${recipe.meals[0].idMeal}`} />}
-            </div>
+                        {recipe?.meals?.length > 0 && <img src={recipe.meals[0].strMealThumb} alt={`image for recipe ${recipe.meals[0].idMeal}`} />}
+                        {favorite ? <p className="my-favorite" onClick={() => removeFromFavoritesRecipe(recipe?.meals?.[0].idMeal)}>♥</p> :
+                         <p className="add-to-favorites" onClick={() => addToFavoritesRecipe(recipe?.meals?.[0])}>♥</p>}
+                    </div>
             <div className="recipe-ingredients-instructions-container">
                  <p className="ingredients-title">Ingredients</p>
                 <div className="recipe-ingredients-container">

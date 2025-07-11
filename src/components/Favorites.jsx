@@ -22,7 +22,7 @@ function Favorites(){
         )}
     return(
       <div className="favorites-recipe-container">
-        <h2>You have no Favorites Recipe</h2>
+        <h1>You have no Favorites Recipe</h1>
       </div>
     )
 }
