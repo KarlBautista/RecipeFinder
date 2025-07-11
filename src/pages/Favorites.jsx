@@ -1,5 +1,5 @@
 import Favorites from "../components/Favorites";
-function Favorites(){
+function FavoritesPage(){
     return (
         <div>
             <Favorites />
@@ -7,4 +7,4 @@ function Favorites(){
     )
 }
 
-export default Favorites;
+export default FavoritesPage;
