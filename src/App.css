@@ -4,7 +4,8 @@ body{
     background-color: #fafafa;
     margin: 0;
     padding: 0;
-
+    width: 100%;
+  
     
 }
 
@@ -22,3 +23,10 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
