@@ -34,22 +34,6 @@ input{
 }
 
 
-.search-dish-btn{
-    border-radius: 10px;
-    width: 100px;
-    font-size: 1.3rem;
-    padding: 15px 25px;
-    color: #FFBF00;
-    background-color: #FFBF00;
-    color: white;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    cursor: pointer;
-}
-
-
 
 
 .search-dish-btn:hover{

@@ -8,24 +8,58 @@
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     margin-top: 50px;
-  
+    padding: 0 20px;
 }
 
 .favorites-recipe-grid{
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 50px;
-    
+    padding: 0 20px;
 }
 
 
 .favorites-recipe-container h1{
-    color:  #FFBF00;
+    color: #FFBF00;
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
 }
 
 .favorites-recipe-container h2{
-    color:  #FFBF00;
+    color: #FFBF00;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .favorites-recipe-container {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+    
+    .favorites-recipe-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-recipe-container {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    
+    .favorites-recipe-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
 }
 
