@@ -6,7 +6,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.recipe-by-category-title{
+    margin-top: 30px;
 }
 
 .recipe-by-category-grid{
@@ -20,6 +24,9 @@
 @media (max-width: 1024px) {
     .recipe-by-category-grid {
       grid-template-columns: repeat(3, 1fr);
+    }
+    .recipe-by-category-title p{
+        font-size: 2rem;
     }
 }
 
