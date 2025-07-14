@@ -40,3 +40,20 @@
     z-index: 10000;
     cursor: pointer;
 }
+
+
+@media (max-width: 1024px) {
+
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        gap: 5px;
+    }
+
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+}
