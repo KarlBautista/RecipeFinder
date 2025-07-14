@@ -113,17 +113,18 @@ border-bottom: 5px solid #FFBF00;
 }
 
 @media (max-width: 670px){
+    .navbar-container {
+        height: 75px;
+    }
     .brand-container{
-    
         font-size: 1.5rem;
+    }
+
+    .burger-menu-links a {
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width: 390px){
-    .burger-menu-links a{
-        font-size: 1.3rem;
-    }
-}
 
 
 

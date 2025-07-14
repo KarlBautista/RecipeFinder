@@ -18,3 +18,9 @@
     color: #FFBF00;
 }
 
+@media (max-width: 1024px) {
+    .loading {
+        width: 100px;
+        height: 100px;
+    }
+}
