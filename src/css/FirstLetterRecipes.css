@@ -13,7 +13,7 @@
 .first-letter-recipe-grid{
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 40px;
     
@@ -29,4 +29,12 @@
    font-size: 2rem;
    font-weight: 500;
     color: #FFBF00;
+}
+
+@media (max-width: 768px){
+    .first-letter-recipe-title p{
+        font-size: 1.3rem;
+       
+    }
+
 }
