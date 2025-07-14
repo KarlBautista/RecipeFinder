@@ -17,8 +17,6 @@
 }
 
 .input-dish{
-    flex: 1;
-    min-width: 500px;
     max-width: 600px;
     font-size: 1.3rem;
     padding: 15px 25px;
@@ -33,17 +31,38 @@ input{
     outline: none;
 }
 
-
-
+.search-dish-btn{
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    background-color: #FFBF00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 .search-dish-btn:hover{
-    background-color: hsl(45, 100%, 60%);
-    box-shadow: 0 4px 12px rgba(255, 191, 0, 0.3);
-}
-.search-dish-btn:active{
-    background-color: hsl(39, 100%, 50%);
+    background-color: #e6ac00;
 }
 
-.test{
-    font-size: 5rem;
+.search-dish-btn:active{
+    background-color: #cc9900;
+}
+
+
+
+@media (max-width: 637px) {
+    .input-dish {
+        font-size: 0.8rem;
+         padding: 10px 15px;
+    }
+
+    .input-container{
+        margin-bottom: 0px;
+    }
+
+    .search-dish-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }

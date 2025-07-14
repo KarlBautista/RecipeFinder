@@ -28,3 +28,13 @@
     transition: all 0.3s ease-in-out;
     color: hsl(45, 100%, 50%);
 }
+
+@media (max-width: 768px) {
+    .letters-container {
+       flex-wrap: wrap;
+    }
+    .letters-container p {
+        font-size: 1.5rem;
+        
+    }
+}
