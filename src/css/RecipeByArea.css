@@ -15,7 +15,7 @@
 .filter-by-area-grid{
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
@@ -36,3 +36,12 @@
     font-weight: 600;
 }
 
+@media (max-width: 768px){
+    .filter-by-area-title {
+        margin-top: 30px;
+    }
+
+     .filter-by-area-title p {
+        font-size: 2rem;
+    }
+}
